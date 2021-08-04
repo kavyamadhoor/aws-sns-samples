@@ -1,5 +1,5 @@
 AWSTemplateFormatVersion: 2010-09-09
-Description: CloudFormation Template for SNS VPC Endpoints Tutorial
+Description: CloudFormation Template for SNS VPC Endpointss Tutorial
 Parameters:
   KeyName:
     Description: Name of an existing EC2 KeyPair to enable SSH access to the instance
@@ -172,7 +172,7 @@ Resources:
             message = event['Records'][0]['Sns']['Message']
             print("From SNS: " + message)
             return message
-      Description: SNS VPC endpoint tutorial lambda function 1
+      Description: SNS VPC endpoint Tutorial lambda function 1
       FunctionName: VPCE-Tutorial-Lambda-1
       Handler: index.lambda_handler
       Role: !GetAtt
